@@ -1,0 +1,68 @@
+repositoryUrl: https://github.com/dynamsoft-docs/code-parser-docs-mobile/blob/main
+repository: Dynamsoft-Docs/code-parser-docs-mobile
+docFullPath: https://www.dynamsoft.com/code-parser/docs/mobile/
+firstLevelUrl: /code-parser/docs/mobile/
+docHomePage: /code-parser/docs/mobile/introduction/
+
+enumerations: /code-parser/docs/core/parameters/enum/
+parameters-reference: /code-parser/docs/core/parameters/reference/
+
+dcp_android: /code-parser/docs/mobile/programming/android/
+dcp_android_api: /code-parser/docs/mobile/programming/android/api-reference/
+dcp_android_release_notes: /code-parser/docs/mobile/programming/android/release-notes/
+
+dcp_ios: /code-parser/docs/mobile/programming/ios/
+dcp_ios_api: /code-parser/docs/mobile/programming/ios/api-reference/
+dcp_ios_release_notes: /code-parser/docs/mobile/programming/ios/release-notes/
+
+dcv_android_api: /capture-vision/docs/mobile/programming/android/api-reference/
+dcv_ios_api: /capture-vision/docs/mobile/programming/ios/api-reference/
+dcv_enumerations: /capture-vision/docs/core/enums/
+dcv_parameter_reference: /capture-vision/docs/core/parameters/reference/
+
+assets: /code-parser/docs/mobile/assets/
+edit_icon: /code-parser/docs/mobile/assets/img-icon/edit-icon.png
+smile_icon: /code-parser/docs/mobile/assets/img-icon/icon-smile.png
+sad_icon: /code-parser/docs/mobile/assets/img-icon/icon-sad.png
+dbr_icon: /code-parser/docs/mobile/assets/img-icon/icon-dbr.svg
+dwt_icon: /code-parser/docs/mobile/assets/img-icon/icon-dwt.svg
+dnt_icon: /code-parser/docs/mobile/assets/img-icon/icon-dnt.svg
+
+useVersionTree: true
+
+baseurl: "/code-parser/docs/mobile"
+
+plugins:
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-webp
+  - jekyll-relative-links
+  - jekyll-redirect-from
+  - jekyll-readme-index
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default-layout"
+      noTitleIndex: true
+      needAutoGenerateSidebar: true
+      needGenerateH3Content: true
+  - scope:
+      path: "programming/android"
+    values:
+      docRootName: "Label Recognizer Android Edition"
+      docHomePage: "/code-parser/docs/mobile/programming/android/"
+  - scope:
+      path: "programming/ios"
+    values:
+      docRootName: "Label Recognizer iOS Edition"
+      docHomePage: "/code-parser/docs/mobile/programming/ios/"
+  - scope:
+      path: "Hide_Tree_Page.html"
+    values:
+      sitemap: false
+
+url: "https://www.dynamsoft.com" # sitemap root
+
