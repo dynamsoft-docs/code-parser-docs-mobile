@@ -1,8 +1,8 @@
 ---
 layout: default-layout
-title: CCodeParser Class - Dynamsoft Code Parser SDK Android Edition API Reference
-description: This page shows CCodeParser Class of Dynamsoft Code Parser SDK Android Edition.
-keywords: CCodeParser, api reference, Android
+title: CodeParser Class - Dynamsoft Code Parser SDK Android Edition API Reference
+description: This page shows CodeParser Class of Dynamsoft Code Parser SDK Android Edition.
+keywords: CodeParser, api reference, Android
 needAutoGenerateSidebar: true
 ---
 

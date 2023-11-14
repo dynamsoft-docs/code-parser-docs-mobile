@@ -1,14 +1,14 @@
 ---
 layout: default-layout
-title: CCodeParser Class - Dynamsoft Code Parser SDK iOS Edition API Reference
-description: This page shows CCodeParser Class of Dynamsoft Code Parser SDK iOS Edition.
-keywords: CCodeParser, api reference, iOS
+title: DSCodeParser Class - Dynamsoft Code Parser SDK iOS Edition API Reference
+description: This page shows DSCodeParser Class of Dynamsoft Code Parser SDK iOS Edition.
+keywords: DSCodeParser, api reference, iOS
 needAutoGenerateSidebar: true
 ---
 
-# CodeParser Class
+# DSCodeParser Class
 
-The `CodeParser` class enable users to configure the code parser settings or parse the content.
+The `DSCodeParser` class enable users to configure the code parser settings or parse the content.
 
 ## Definition
 

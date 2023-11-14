@@ -1,14 +1,14 @@
 ---
 layout: default-layout
-title: CodeParserModule Class - Dynamsoft Code Parser SDK iOS Edition API Reference
-description: This page shows CodeParserModule Class of Dynamsoft Code Parser SDK iOS Edition.
-keywords: CodeParserModule, api reference, iOS
+title: DSCodeParserModule Class - Dynamsoft Code Parser SDK iOS Edition API Reference
+description: This page shows DSCodeParserModule Class of Dynamsoft Code Parser SDK iOS Edition.
+keywords: DSCodeParserModule, api reference, iOS
 needAutoGenerateSidebar: true
 ---
 
-# CodeParserModule Class
+# DSCodeParserModule Class
 
-`CodeParserModule` class defines general functions of the code parser module.
+`DSCodeParserModule` class defines general functions of the code parser module.
 
 ## Definition
 
@@ -33,7 +33,9 @@ class CodeParserModule : NSObject
 | ------ | ----------- |
 | [`getVersion`](#getversion) | Get version information of SDK.|
 
-## getVersion
+## Method Detail
+
+### getVersion
 
 Get version information of SDK.
 

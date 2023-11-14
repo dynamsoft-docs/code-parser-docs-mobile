@@ -1,8 +1,8 @@
 ---
 layout: default-layout
-title: CParsedResultItem Class - Dynamsoft Code Parser SDK Android Edition API Reference
-description: This page shows CParsedResultItem Class of Dynamsoft Code Parser SDK Android Edition.
-keywords: CParsedResultItem, api reference, Android
+title: ParsedResultItem Class - Dynamsoft Code Parser SDK Android Edition API Reference
+description: This page shows ParsedResultItem Class of Dynamsoft Code Parser SDK Android Edition.
+keywords: ParsedResultItem, api reference, Android
 needAutoGenerateSidebar: true
 ---
 
