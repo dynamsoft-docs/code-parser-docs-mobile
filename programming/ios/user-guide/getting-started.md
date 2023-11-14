@@ -1,11 +1,11 @@
 ---
 layout: default-layout
-title: User Guide - Dynamsoft Code Parser SDK Android Edition
-description: This is the user guide of Dynamsoft Code Parser SDK Android Edition.
-keywords: user guide, Android
+title: User Guide - Dynamsoft Code Parser SDK iOS Edition
+description: This is the user guide of Dynamsoft Code Parser SDK iOS Edition.
+keywords: user guide, iOS
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 noTitleIndex: true
 ---
 
-# Getting Started with Android Edition
+# Getting Started with iOS Edition

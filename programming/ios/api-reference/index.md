@@ -1,22 +1,23 @@
 ---
 layout: default-layout
-title: Main Page - Dynamsoft Code Parser SDK Android Edition API Reference
-description: This is the main page of Dynamsoft Code Parser SDK Android Edition API Reference.
-keywords: api reference, Android
+title: Main Page - Dynamsoft Code Parser SDK iOS Edition API Reference
+description: This is the main page of Dynamsoft Code Parser SDK iOS Edition API Reference.
+keywords: api reference, iOS
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---
 
-# API Reference - Dynamsoft Code Parser SDK Android Edition
+# API Reference - Dynamsoft Code Parser SDK iOS Edition
 
 ## Classes
 
-* [`CodeParser`](code-parser.md)
-* [`LicenseManager`]({{ site.dcv_cpp_api }}license/license-manager.html)
-* [`ParsedResultItem`](parsed-result-item.md)
+* [`CodeParser`](code-parser.html)
+* [`LicenseManager`]({{ site.dcv_ios_api }}license/license-manager.html)
+* [`ParsedResultItem`](parsed-result-item.html)
+* [`ParsedResult`](parsed-result.html)
 
 ## Enumerations  
 
-* [`ErrorCode`]({{ site.enumerations }}core/error-code.html?lang=cpp)
-* [`MappingStatus`]({{ site.enumerations }}code-parser/mapping-status.html?lang=cpp)
-* [`ValidationStatus`]({{ site.enumerations }}code-parser/validation-status.html?lang=cpp)
+* [`ErrorCode`]({{ site.enumerations }}core/error-code.html?lang=objc,swift)
+* [`MappingStatus`]({{ site.enumerations }}code-parser/mapping-status.html?lang=objc,swift)
+* [`ValidationStatus`]({{ site.enumerations }}code-parser/validation-status.html?lang=objc,swift)

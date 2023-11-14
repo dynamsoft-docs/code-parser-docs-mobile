@@ -8,6 +8,14 @@ needAutoGenerateSidebar: true
 
 # CodeParser Class
 
+The `CodeParser` class enable users to configure the code parser settings or parse the content.
+
+## Definition
+
+*Namespace:* com.dynamsoft.dcp
+
+*Assembly:* DynamsoftCodeParser.aar
+
 ```java
 class CodeParser
 ```

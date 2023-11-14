@@ -9,6 +9,14 @@ needAutoGenerateSidebar: true
 
 # ParsedResult Class
 
+`ParsedResult` class stores all parsed result items that are obtained from a single image. It carries additional information such as the original image data or error messages.
+
+## Definition
+
+*Namespace:* com.dynamsoft.dcp
+
+*Assembly:* DynamsoftCodeParser.aar
+
 ```java
 class ParsedResult
 ```

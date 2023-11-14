@@ -1,114 +1,175 @@
 ---
 layout: default-layout
-title: CParsedResultItem Class - Dynamsoft Code Parser SDK Android Edition API Reference
-description: This page shows CParsedResultItem Class of Dynamsoft Code Parser SDK Android Edition.
-keywords: CParsedResultItem, api reference, Android
+title: DSParsedResultItem Class - Dynamsoft Code Parser SDK iOS Edition API Reference
+description: This page shows DSParsedResultItem Class of Dynamsoft Code Parser SDK iOS Edition.
+keywords: DSParsedResultItem, api reference, iOS
 needAutoGenerateSidebar: true
 ---
 
 
-# CParsedResultItem Class
+# DSParsedResultItem Class
 
-```java
-class dynamsoft::dcp::CParsedResultItem
+`ParsedResultItem` it the basic unit of a parsed result. It stores the field name, value and additional information.
+
+## Definition
+
+*Assembly:* DynamsoftCodeParser.xcframework
+
+<div class="sample-code-prefix"></div>
+>- Objective-C
+>- Swift
+>
+>1. 
+```objc
+@interface DSParsedResultItem: DSCapturedResultItem
+```
+2. 
+```swift
+class ParsedResultItem : CapturedResultItem
 ```
 
-  | Method               | Description |
-  |----------------------|-------------|
-  | [`getCodeType`](#getcodetype) | Gets the code type of the parsed result. |
-  | [`getFieldMappingStatus`](#getfieldmappingstatus) | Gets the mapping status of a specified field from the parsed result. |
-  | [`getFieldValidationStatus`](#getfieldvalidationstatus) | Gets the validation status of a specified field from the parsed result. |
-  | [`getFieldValue`](#getfieldvalue) | Gets the value of a specified field from the parsed result. |
-  | [`getJsonString`](#getjsonstring) | Gets the parsed result as a JSON formatted string. |
-  
-## getCodeType
+## Method Summary
 
-Gets the code type of the parsed result.
+| Method | Description |
+| ------ | ----------- |
+| [`getFieldMappingStatus`](#getfieldmappingstatus) | Gets the mapping status of a specified field from the parsed result. |
+| [`getFieldValidationStatus`](#getfieldvalidationstatus) | Gets the validation status of a specified field from the parsed result. |
+| [`getFieldValue`](#getfieldvalue) | Gets the value of a specified field from the parsed result. |
 
-```java
-String getCodeType();
+## Property Summary
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| [`codeType`](#codetype) | *NSString* | Gets the code type of the parsed result. |
+| [`jsonString`](#jsonstring) | *NSString* | Gets the parsed result as a JSON formatted string. |
+| [`parsedFields`](#parsedfields) | *NSDictionary* | A `NSDictionary` object stores the field names and values of the parsed fields. |
+
+## Method Detail
+
+### getFieldMappingStatus
+
+Gets the mapping status of a specified field from the parsed result.
+
+<div class="sample-code-prefix"></div>
+>- Objective-C
+>- Swift
+>
+>1. 
+```objc
+- (DSMappingStatus *)getFieldMappingStatus(NSString *)fieldName;
 ```
-
-**Return Value**
-
-Returns a string value representing the code type.
-
-## getJsonString
-
-Gets the parsed result as a JSON formatted string.
-
-```java
-String getJsonString();
-```
-
-**Return Value**
-
-Returns a JSON formatted string representing the parsed result.
-
-## getFieldValue
-
-Gets the value of a specified field from the parsed result.
-
-```java
-String getFieldValue(String fieldName);
+2. 
+```swift
+func getFieldMappingStatus(_ fieldName:String) -> MappingStatus
 ```
 
 **Parameters**
 
-`[in] fieldName`: The name of the field.
+`fieldName`: The name of the field.
+
+**Return Value**
+
+Returns a [MappingStatus]({{ site.enumerations }}code-parser/mapping-status.html?lang=objc,swift) enumeration value representing the mapping status of a specified field.
+
+### getFieldValidationStatus
+
+Gets the validation status of a specified field from the parsed result.
+
+<div class="sample-code-prefix"></div>
+>- Objective-C
+>- Swift
+>
+>1. 
+```objc
+- (DSValidationStatus *)getFieldValidationStatus(NSString *)fieldName;
+```
+2. 
+```swift
+func getFieldValidationStatus(_ fieldName:String) -> ValidationStatus
+```
+
+**Parameters**
+
+`fieldName`: The name of the field.
+
+**Return Value**
+
+Returns a [ValidationStatus]({{ site.enumerations }}code-parser/validation-status.html?lang=objc,swift) enumeration value representing the validation status of a specified field.
+
+### getFieldValue
+
+Gets the value of a specified field from the parsed result.
+
+<div class="sample-code-prefix"></div>
+>- Objective-C
+>- Swift
+>
+>1. 
+```objc
+- (NSString *)getFieldValue(NSString *)fieldName;
+```
+2. 
+```swift
+func getFieldValue(_ fieldName:String) -> String
+```
+
+**Parameters**
+
+`fieldName`: The name of the field.
 
 **Return Value**
 
 Returns a string representing the specified field value.
 
-## getFieldMappingStatus
+## Property Detail
 
-Gets the mapping status of a specified field from the parsed result.
+### codeType
 
-```java
-EnumMappingStatus getFieldMappingStatus(String fieldName);
+Gets the code type of the parsed result.
+
+<div class="sample-code-prefix"></div>
+>- Objective-C
+>- Swift
+>
+>1. 
+```objc
+@property (nonatomic, readonly) NSString * codeType;
+```
+2. 
+```swift
+var codeType: String? { get }
 ```
 
-**Parameters**
+### jsonString
 
-`[in] fieldName`: The name of the field.
+The parsed result as a JSON formatted string.
 
-**Return Value**
-
-Returns a [MappingStatus]({{ site.enumerations }}code-parser/mapping-status.html?lang=android) enumeration value representing the mapping status of a specified field.
-
-**See Also**
-
-[MappingStatus]({{ site.enumerations }}code-parser/mapping-status.html?lang=android)
-
-## getFieldValidationStatus
-
-Gets the validation status of a specified field from the parsed result.
-
-```java
-EnumValidationStatus getFieldValidationStatus(String fieldName);
+<div class="sample-code-prefix"></div>
+>- Objective-C
+>- Swift
+>
+>1. 
+```objc
+@property (nonatomic, readonly) NSString * jsonString;
+```
+2. 
+```swift
+var jsonString: String? { get }
 ```
 
-**Parameters**
+### parsedFields
 
-`[in] fieldName`: The name of the field.
+A `NSDictionary` object stores the field names and values of the parsed fields. The field names are stored as the key of the HashMap while the field values are stored as the value.
 
-**Return Value**
-
-Returns a [ValidationStatus]({{ site.enumerations }}code-parser/validation-status.html?lang=android) enumeration value representing the validation status of a specified field.
-
-**See Also**
-
-[ValidationStatus]({{ site.enumerations }}code-parser/validation-status.html?lang=android)
-
-## getParsedFields
-
-Get the field names and values of the parsed fields as a `HashMap`. The field names are stored as the key of the HashMap while the field values are stored as the value.
-
-```java
-HashMap<String, String> getParsedFields();
+<div class="sample-code-prefix"></div>
+>- Objective-C
+>- Swift
+>
+>1. 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *, NSString *> * parsedFields;
 ```
-
-**Return Value**
-
-A HashMap that contains the names and values of the parsed fields.
+2. 
+```swift
+var parsedFields: NSDictionary { get }
+```

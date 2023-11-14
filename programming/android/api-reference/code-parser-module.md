@@ -10,6 +10,16 @@ needAutoGenerateSidebar: true
 
 `CodeParserModule` class defines general functions of the code parser module.
 
+## Definition
+
+*Namespace:* com.dynamsoft.dcp
+
+*Assembly:* DynamsoftCodeParser.aar
+
+```java
+class CodeParserModule
+```
+
 | Method               | Description |
 |----------------------|-------------|
 | [`getVersion`](#getversion) | Get version information of SDK.|

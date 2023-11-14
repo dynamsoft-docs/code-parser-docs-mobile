@@ -19,4 +19,4 @@ needGenerateH3Content: true
 
 ## Release Notes
 
-- [Version 2.x](release-notes/cpp-2.md)
+- [Version 2.x](release-notes/ios-2.md)

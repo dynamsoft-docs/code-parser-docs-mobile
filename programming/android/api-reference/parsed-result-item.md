@@ -8,6 +8,14 @@ needAutoGenerateSidebar: true
 
 # ParsedResultItem Class
 
+`ParsedResultItem` it the basic unit of a parsed result. It stores the field name, value and additional information.
+
+## Definition
+
+*Namespace:* com.dynamsoft.dcp
+
+*Assembly:* DynamsoftCodeParser.aar
+
 ```java
 class ParsedResultItem extends CapturedResultItem
 ```

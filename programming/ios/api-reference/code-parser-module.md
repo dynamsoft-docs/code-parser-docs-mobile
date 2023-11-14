@@ -1,8 +1,8 @@
 ---
 layout: default-layout
-title: CodeParserModule Class - Dynamsoft Code Parser SDK Android Edition API Reference
-description: This page shows CodeParserModule Class of Dynamsoft Code Parser SDK Android Edition.
-keywords: CodeParserModule, api reference, Android
+title: CodeParserModule Class - Dynamsoft Code Parser SDK iOS Edition API Reference
+description: This page shows CodeParserModule Class of Dynamsoft Code Parser SDK iOS Edition.
+keywords: CodeParserModule, api reference, iOS
 needAutoGenerateSidebar: true
 ---
 
@@ -12,7 +12,7 @@ needAutoGenerateSidebar: true
 
 ## Definition
 
-*Assembly:* DynamsoftCodeParser.framework
+*Assembly:* DynamsoftCodeParser.xcframework
 
 <div class="sample-code-prefix"></div>
 >- Objective-C
@@ -27,6 +27,8 @@ needAutoGenerateSidebar: true
 class CodeParserModule : NSObject
 ```
 
+## Method Summary
+
 | Method | Description |
 | ------ | ----------- |
 | [`getVersion`](#getversion) | Get version information of SDK.|
@@ -34,10 +36,6 @@ class CodeParserModule : NSObject
 ## getVersion
 
 Get version information of SDK.
-
-```java
-static String getVersion();
-```
 
 <div class="sample-code-prefix"></div>
 >- Objective-C

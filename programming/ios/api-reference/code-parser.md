@@ -1,16 +1,18 @@
 ---
 layout: default-layout
-title: CCodeParser Class - Dynamsoft Code Parser SDK Android Edition API Reference
-description: This page shows CCodeParser Class of Dynamsoft Code Parser SDK Android Edition.
-keywords: CCodeParser, api reference, Android
+title: CCodeParser Class - Dynamsoft Code Parser SDK iOS Edition API Reference
+description: This page shows CCodeParser Class of Dynamsoft Code Parser SDK iOS Edition.
+keywords: CCodeParser, api reference, iOS
 needAutoGenerateSidebar: true
 ---
 
 # CodeParser Class
 
+The `CodeParser` class enable users to configure the code parser settings or parse the content.
+
 ## Definition
 
-*Assembly:* DynamsoftCodeParser.framework
+*Assembly:* DynamsoftCodeParser.xcframework
 
 <div class="sample-code-prefix"></div>
 >- Objective-C
@@ -25,6 +27,8 @@ needAutoGenerateSidebar: true
 class CodeParser : NSObject
 ```
 
+## Method Summary
+
 | Method | Description |
 | ------ | ----------- |
 | [`init`](#init) | The constructor.|
@@ -33,7 +37,9 @@ class CodeParser : NSObject
 | [`parse`](#parse) | Parses code data for readable results. |
 | [`resetSettings`](#resetsettings) | Reset runtime settings to default. |
 
-## init
+## Method Detail
+
+### init
 
 Default constructor of a `CodeParser` object.
 
@@ -47,9 +53,54 @@ Default constructor of a `CodeParser` object.
 ```
 2. 
 ```swift
+init()
 ```
 
-## Parse
+### InitSettingsFromFile
+
+Initialize settings from a given file.
+
+<div class="sample-code-prefix"></div>
+>- Objective-C
+>- Swift
+>
+>1. 
+```objc
+- (BOOL)initSettingsFromFile:(NSString *)filePath
+                       error:(NSError * _Nullable * _Nullable)error;
+```
+2. 
+```swift
+func initSettingsFromFile(_ filePath:String) throws -> BOOL
+```
+
+**Parameters**
+
+`filePath`: The path of the settings file.
+
+### InitSettings
+
+Initialize settings from a given string.
+
+<div class="sample-code-prefix"></div>
+>- Objective-C
+>- Swift
+>
+>1. 
+```objc
+- (BOOL)initSettings:(NSString *)content
+               error:(NSError * _Nullable * _Nullable)error;
+```
+2. 
+```swift
+func initSettings(_ content:String) throws -> BOOL
+```
+
+**Parameters**
+
+`content`: A JSON string that represents the content of the settings.
+
+### Parse
 
 Parses code data for human-readable results.
 
@@ -65,20 +116,20 @@ Parses code data for human-readable results.
 ```
 2. 
 ```swift
-func parse() -> ParsedResultItem
+func parse(_ bytes:Data, taskSettingName:String) throws -> ParsedResultItem
 ```
 
 **Parameters**
 
-`[in] bytes` The array of bytes which contain the code string.
+`bytes` The array of bytes which contain the code string.
 
-`[in] taskSettingName`<sub>Optional</sub> The name of [`CodeParserTaskSetting`]({{site.parameters}}file/task-settings/code-parser-task-settings.html) which defines the settings used for code parsing.
+`taskSettingName`<sub>Optional</sub> The name of [`CodeParserTaskSetting`]({{site.parameters}}file/task-settings/code-parser-task-settings.html) which defines the settings used for code parsing.
 
 **Return Value**
 
 Returns [`ParsedResultItem`](parsed-result-item.md) which stores the human-readable results.
 
-## ResetSettings
+### ResetSettings
 
 Reset all parameters to default values.
 
@@ -92,46 +143,5 @@ Reset all parameters to default values.
 ```
 2. 
 ```swift
+func resetSettings()
 ```
-
-## InitSettingsFromFile
-
-Initialize settings from a given file.
-
-<div class="sample-code-prefix"></div>
->- Objective-C
->- Swift
->
->1. 
-```objc
-- (BOOL)initSettingsFromFile:(NSString *)filePath
-                       error:(NSError * _Nullable * _Nullable)error;
-```
-2. 
-```swift
-```
-
-**Parameters**
-
-`[in] filePath` The path of the settings file.
-
-## InitSettings
-
-Initialize settings from a given string.
-
-<div class="sample-code-prefix"></div>
->- Objective-C
->- Swift
->
->1. 
-```objc
-- (BOOL)initSettings:(NSString *)content
-               error:(NSError * _Nullable * _Nullable)error;
-```
-2. 
-```swift
-```
-
-**Parameters**
-
-`[in] content` A JSON string that represents the content of the settings.
