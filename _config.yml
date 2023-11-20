@@ -20,13 +20,13 @@ dcv_ios_api: /capture-vision/docs/mobile/programming/ios/api-reference/
 dcv_enumerations: /capture-vision/docs/core/enums/
 dcv_parameter_reference: /capture-vision/docs/core/parameters/reference/
 
-# assets: /code-parser/docs/mobile/assets/
-# edit_icon: /code-parser/docs/mobile/assets/img-icon/edit-icon.png
-# smile_icon: /code-parser/docs/mobile/assets/img-icon/icon-smile.png
-# sad_icon: /code-parser/docs/mobile/assets/img-icon/icon-sad.png
-# dbr_icon: /code-parser/docs/mobile/assets/img-icon/icon-dbr.svg
-# dwt_icon: /code-parser/docs/mobile/assets/img-icon/icon-dwt.svg
-# dnt_icon: /code-parser/docs/mobile/assets/img-icon/icon-dnt.svg
+assets: /code-parser/docs/mobile/assets/
+edit_icon: /code-parser/docs/mobile/assets/img-icon/edit-icon.png
+smile_icon: /code-parser/docs/mobile/assets/img-icon/icon-smile.png
+sad_icon: /code-parser/docs/mobile/assets/img-icon/icon-sad.png
+dbr_icon: /code-parser/docs/mobile/assets/img-icon/icon-dbr.svg
+dwt_icon: /code-parser/docs/mobile/assets/img-icon/icon-dwt.svg
+dnt_icon: /code-parser/docs/mobile/assets/img-icon/icon-dnt.svg
 
 useVersionTree: true
 
