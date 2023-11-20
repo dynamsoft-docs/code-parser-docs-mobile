@@ -54,12 +54,12 @@ defaults:
   - scope:
       path: "programming/android"
     values:
-      docRootName: "Label Recognizer Android Edition"
+      docRootName: "Code Parser Android Edition"
       docHomePage: "/code-parser/docs/mobile/programming/android/"
   - scope:
       path: "programming/ios"
     values:
-      docRootName: "Label Recognizer iOS Edition"
+      docRootName: "Code Parser iOS Edition"
       docHomePage: "/code-parser/docs/mobile/programming/ios/"
   - scope:
       path: "Hide_Tree_Page.html"
