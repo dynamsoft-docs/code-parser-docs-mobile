@@ -195,6 +195,9 @@ Add the SDK to your new project. Please read [Add the Libraries](#add-the-librar
         }
    }
    ```
+  
+   >Note:
+   >- Check out the complete <a href="https://www.dynamsoft.com/code-parser/docs/core/code-types/" target="_blank">supported code types and fields </a>for details.
 
 ### Display Parsed Results
 
