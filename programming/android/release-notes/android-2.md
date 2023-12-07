@@ -8,7 +8,7 @@ needGenerateH3Content: false
 
 # Release Notes for Android Edition - 2.x
 
-## 2.0.20 (10/26/2023)
+## 2.0.20 (12/07/2023)
 
 {%- include release-notes/product-highlight-2.0.0.md -%}
 
