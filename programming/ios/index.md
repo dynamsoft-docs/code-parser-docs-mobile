@@ -1,13 +1,13 @@
 ---
 layout: default-layout
-title: Main Page - Dynamsoft Code Parser SDK Android Edition
-description: This is the main page of Dynamsoft Code Parser SDK Android Edition.
-keywords: Android
+title: Main Page - Dynamsoft Code Parser SDK iOS Edition
+description: This is the main page of Dynamsoft Code Parser SDK iOS Edition.
+keywords: iOS
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---
 
-# Dynamsoft Code Parser Android Edition Documentation
+# Dynamsoft Code Parser iOS Edition Documentation
 
 ## Getting Started
 
