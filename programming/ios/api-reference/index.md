@@ -18,6 +18,6 @@ needGenerateH3Content: true
 
 ## Enumerations  
 
-* [`ErrorCode`]({{ site.enumerations }}core/error-code.html?lang=objc,swift)
-* [`MappingStatus`]({{ site.enumerations }}code-parser/mapping-status.html?lang=objc,swift)
-* [`ValidationStatus`]({{ site.enumerations }}code-parser/validation-status.html?lang=objc,swift)
+* [`ErrorCode`]({{ site.dcv_enumerations }}core/error-code.html?lang=objc,swift)
+* [`MappingStatus`]({{ site.dcv_enumerations }}code-parser/mapping-status.html?lang=objc,swift)
+* [`ValidationStatus`]({{ site.dcv_enumerations }}code-parser/validation-status.html?lang=objc,swift)
