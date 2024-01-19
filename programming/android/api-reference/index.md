@@ -12,12 +12,12 @@ needGenerateH3Content: true
 ## Classes
 
 * [`CodeParser`](code-parser.html)
-* [`LicenseManager`]({{ site.dcv_cpp_api }}license/license-manager.html)
+* [`LicenseManager`]({{ site.dcv_android_api }}license/license-manager.html)
 * [`ParsedResultItem`](parsed-result-item.html)
 * [`ParsedResult`](parsed-result.html)
 
 ## Enumerations  
 
-* [`ErrorCode`]({{ site.enumerations }}core/error-code.html?lang=android)
-* [`MappingStatus`]({{ site.enumerations }}code-parser/mapping-status.html?lang=android)
-* [`ValidationStatus`]({{ site.enumerations }}code-parser/validation-status.html?lang=android)
+* [`ErrorCode`]({{ site.dcv_enumerations }}core/error-code.html?lang=android)
+* [`MappingStatus`]({{ site.dcv_enumerations }}code-parser/mapping-status.html?lang=android)
+* [`ValidationStatus`]({{ site.dcv_enumerations }}code-parser/validation-status.html?lang=android)

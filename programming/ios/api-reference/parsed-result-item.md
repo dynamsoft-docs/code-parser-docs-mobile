@@ -69,7 +69,7 @@ func getFieldMappingStatus(_ fieldName:String) -> MappingStatus
 
 **Return Value**
 
-Returns a [MappingStatus]({{ site.enumerations }}code-parser/mapping-status.html?lang=objc,swift) enumeration value representing the mapping status of a specified field.
+Returns a [MappingStatus]({{ site.dcv_enumerations }}code-parser/mapping-status.html?lang=objc,swift) enumeration value representing the mapping status of a specified field.
 
 ### getFieldValidationStatus
 
@@ -94,7 +94,7 @@ func getFieldValidationStatus(_ fieldName:String) -> ValidationStatus
 
 **Return Value**
 
-Returns a [ValidationStatus]({{ site.enumerations }}code-parser/validation-status.html?lang=objc,swift) enumeration value representing the validation status of a specified field.
+Returns a [ValidationStatus]({{ site.dcv_enumerations }}code-parser/validation-status.html?lang=objc,swift) enumeration value representing the validation status of a specified field.
 
 ### getFieldValue
 

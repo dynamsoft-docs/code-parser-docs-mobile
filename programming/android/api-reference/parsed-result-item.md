@@ -82,11 +82,11 @@ EnumMappingStatus getFieldMappingStatus(String fieldName);
 
 **Return Value**
 
-Returns a [MappingStatus]({{ site.enumerations }}code-parser/mapping-status.html?lang=android) enumeration value representing the mapping status of a specified field.
+Returns a [MappingStatus]({{ site.dcv_enumerations }}code-parser/mapping-status.html?lang=android) enumeration value representing the mapping status of a specified field.
 
 **See Also**
 
-[MappingStatus]({{ site.enumerations }}code-parser/mapping-status.html?lang=android)
+[MappingStatus]({{ site.dcv_enumerations }}code-parser/mapping-status.html?lang=android)
 
 ## getFieldValidationStatus
 
@@ -102,11 +102,11 @@ EnumValidationStatus getFieldValidationStatus(String fieldName);
 
 **Return Value**
 
-Returns a [ValidationStatus]({{ site.enumerations }}code-parser/validation-status.html?lang=android) enumeration value representing the validation status of a specified field.
+Returns a [ValidationStatus]({{ site.dcv_enumerations }}code-parser/validation-status.html?lang=android) enumeration value representing the validation status of a specified field.
 
 **See Also**
 
-[ValidationStatus]({{ site.enumerations }}code-parser/validation-status.html?lang=android)
+[ValidationStatus]({{ site.dcv_enumerations }}code-parser/validation-status.html?lang=android)
 
 ## getParsedFields
 

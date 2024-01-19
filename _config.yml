@@ -19,6 +19,9 @@ dcv_android_api: /capture-vision/docs/mobile/programming/android/api-reference/
 dcv_ios_api: /capture-vision/docs/mobile/programming/ios/api-reference/
 dcv_enumerations: /capture-vision/docs/core/enums/
 dcv_parameter_reference: /capture-vision/docs/core/parameters/reference/
+dcv_parameter: /capture-vision/docs/core/parameters/
+
+code_types: /code-parser/docs/core/code-types/
 
 assets: /code-parser/docs/mobile/assets/
 edit_icon: /code-parser/docs/mobile/assets/img-icon/edit-icon.png

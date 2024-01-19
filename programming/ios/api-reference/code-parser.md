@@ -123,7 +123,7 @@ func parse(_ bytes:Data, taskSettingName:String) throws -> ParsedResultItem
 
 `bytes` The array of bytes which contain the code string.
 
-`taskSettingName`<sub>Optional</sub> The name of [`CodeParserTaskSetting`]({{site.parameters}}file/task-settings/code-parser-task-settings.html) which defines the settings used for code parsing.
+`taskSettingName`<sub>Optional</sub> The name of [`CodeParserTaskSetting`]({{site.dcv_parameter}}file/task-settings/code-parser-task-settings.html) which defines the settings used for code parsing.
 
 **Return Value**
 
