@@ -38,7 +38,19 @@ String getCodeType();
 
 **Return Value**
 
-Returns a string value representing the code type.
+Returns a string value representing the code type. It can be one of the following:
+
+- "AADHAAR"
+- "AAMVA_DL_ID"
+- "AAMVA_DL_ID_WITH_MAG_STRIPE"
+- "MRTD_TD1_ID"
+- "MRTD_TD2_ID"
+- "MRTD_TD2_VISA"
+- "MRTD_TD3_PASSPORT"
+- "MRTD_TD3_VISA"
+- "MRTD_TD2_FRENCH_ID"
+- "SOUTH_AFRICA_DL"
+- "VIN"
 
 ## getJsonString
 
@@ -70,7 +82,7 @@ Returns a string representing the specified field value.
 
 ## getFieldMappingStatus
 
-Gets the mapping status of a specified field from the parsed result.
+Gets the mapping status of a specified field from the parsed result. Certain fields in the parsed result, such as the residing province or state, are abbreviated (e.g. BC standing for British Columbia). The library takes such fields and maps them to their full form. If the mapping is successful, the `MappingStatus` will be `MS_SUCCEEDED`. To learn of the other options of `MappingStatus`, please refer to the link below.
 
 ```java
 EnumMappingStatus getFieldMappingStatus(String fieldName);
@@ -90,7 +102,7 @@ Returns a [MappingStatus]({{ site.dcv_enumerations }}code-parser/mapping-status.
 
 ## getFieldValidationStatus
 
-Gets the validation status of a specified field from the parsed result.
+Gets the validation status of a specified field from the parsed result. Certain fields can be validated with one of four possible validation methods: certification, checksum, length, and regex. Whether a field is validated or not, as well as the validation method, is determined by the code specification e.g. AAMVA specification.
 
 ```java
 EnumValidationStatus getFieldValidationStatus(String fieldName);
@@ -102,7 +114,7 @@ EnumValidationStatus getFieldValidationStatus(String fieldName);
 
 **Return Value**
 
-Returns a [ValidationStatus]({{ site.dcv_enumerations }}code-parser/validation-status.html?lang=android) enumeration value representing the validation status of a specified field.
+Returns a [ValidationStatus]({{ site.dcv_enumerations }}code-parser/validation-status.html?lang=android) enumeration value saying whether the validation of a specified field was successful, failed, or if it did not require validation.
 
 **See Also**
 
