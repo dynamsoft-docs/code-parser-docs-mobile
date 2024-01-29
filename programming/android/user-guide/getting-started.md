@@ -96,7 +96,7 @@ In this section, we are going to explain how to create a simple `HelloWorld` app
 >
 >- Android Studio 2022.3.1 is used here in this guide.
 >- You can get similar source code from
->    - <a href="https://github.com/Dynamsoft/code-parser-mobile-samples/tree/main/android/HelloWorld" target="_blank">HelloWorld Sample (Java)</a>
+>    - <a href="https://github.com/Dynamsoft/code-parser-mobile-samples/tree/master/android/HelloWorld" target="_blank">HelloWorld Sample (Java)</a>
 
 ### Create a New Project
 
