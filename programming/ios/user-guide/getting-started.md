@@ -84,7 +84,7 @@ The following sample will demonstrate how to create a simple `HelloWorld` app fo
 >Note:
 >
 >- The following steps are completed in XCode 14.2
->- View the entire Swift source code from [HelloWorld(Swift) sample](https://github.com/Dynamsoft/code-parser-mobile-samples/blob/main/ios/HelloWorld/)
+>- View the entire Swift source code from [HelloWorld(Swift) sample](https://github.com/Dynamsoft/code-parser-mobile-samples/blob/master/ios/HelloWorld/)
 
 ### Create a New Project
 
