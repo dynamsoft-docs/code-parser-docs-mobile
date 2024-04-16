@@ -32,15 +32,15 @@ class ParsedResult : NSObject
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| [`getOriginalImageHashId`](#getoriginalimagehashid) |  | Gets the hash ID of the source image. |
-| [`getOriginalImageTag`](#getoriginalimagetag) |  | Gets the tag of the source image. |
-| [`getItems`](#getitems) |  | Gets the parsed result item at the specified index. |
-| [`getErrorCode`](#geterrorcode) |  | Gets the error code of the parsed result, if an error occurred. |
-| [`getErrorString`](#geterrormessage) |  | Gets the error message of the parsed result, if an error occurred. |
+| [`originalImageHashId`](#originalimagehashid) | *NSString \** | Gets the hash ID of the source image. |
+| [`originalImageTag`](#originalimagetag) | *DSImageTag \** | Gets the tag of the source image. |
+| [`items`](#items) | *NSArray<DSParsedResultItem*> \** | Gets the parsed result item at the specified index. |
+| [`errorCode`](#errorcode) | *NSInteger* | Gets the error code of the parsed result, if an error occurred. |
+| [`errorString`](#errormessage) | *NSString \** | Gets the error message of the parsed result, if an error occurred. |
 
 ## Method Detail
 
-### getOriginalImageHashId
+### originalImageHashId
 
 Gets the hash ID of the source image.
 
@@ -61,7 +61,7 @@ var originalImageHashId: String? { get }
 
 Returns a pointer to a null-terminated string containing the hash ID of the source image.
 
-### getOriginalImageTag
+### originalImageTag
 
 Gets the tag of the source image.
 
@@ -86,7 +86,7 @@ Returns a pointer to a CImageTag object representing the tag of the source image
 
 [ImageTag]({{ site.dcv_ios_api }}core/basic-structures/image-tag.html)
 
-### getItems
+### items
 
 Gets the parsed result item at the specified index.
 
@@ -107,7 +107,7 @@ var items: [ParsedResultItem]? { get }
 
 Returns an array of [`ParsedResultItem`](parsed-result-item.html).
 
-### getErrorCode
+### errorCode
 
 Gets the error code of the parsed result, if an error occurred.
 
@@ -128,7 +128,7 @@ var errorCode: Int { get }
 
 Returns the error code of the parsed result, or 0 if no error occurred.
 
-### getErrorMessage
+### errorMessage
 
 Gets the error message of the parsed result, if an error occurred.
 

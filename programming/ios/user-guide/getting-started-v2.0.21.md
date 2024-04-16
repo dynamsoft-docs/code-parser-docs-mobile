@@ -63,10 +63,10 @@ There are two ways to add the libraries into your project - **Manually** and **V
    target '{Your project name}' do
      use_frameworks!
 
-     pod 'DynamsoftCodeParser','2.2.10'
-     pod 'DynamsoftCodeParserDedicator','1.2.20'
-     pod 'DynamsoftCore','3.2.11'
-     pod 'DynamsoftLicense','3.2.11'
+     pod 'DynamsoftCodeParser','2.0.21'
+     pod 'DynamsoftCodeParserDedicator','1.0.10'
+     pod 'DynamsoftCore','3.0.20'
+     pod 'DynamsoftLicense','3.0.30'
 
    end
    ```

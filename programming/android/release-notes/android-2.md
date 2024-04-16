@@ -8,6 +8,16 @@ needGenerateH3Content: false
 
 # Release Notes for Android Edition - 2.x
 
+## 2.2.10 (04/16/2024)
+
+### Improved
+
+- Security update for `DynamsoftCodeParser` and its related libraries.
+
+### Fixed
+
+- Small fixes and tweaks.
+
 ## 2.0.20 (12/07/2023)
 
 {%- include release-notes/product-highlight-2.0.0.md -%}

@@ -8,5 +8,6 @@ needAutoGenerateSidebar: false
 
 # Release Notes - iOS Edition
 
+- [2.2.10 (04/16/2024)](ios-2.md#2210-04162024)
 - [2.0.21 (12/28/2023)](ios-2.md#2021-12282023)
 - [2.0.20 (12/07/2023)](ios-2.md#2020-12072023)
