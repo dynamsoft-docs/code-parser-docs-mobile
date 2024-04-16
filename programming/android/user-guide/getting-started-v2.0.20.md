@@ -79,10 +79,10 @@ There are two ways to add the libraries into your project - **Manually** and **M
 
    ```groovy
    dependencies {
-      implementation 'com.dynamsoft:dynamsoftcodeparser:2.2.10'
-      implementation 'com.dynamsoft:dynamsoftcodeparserdedicator:1.2.20'
-      implementation 'com.dynamsoft:dynamsoftcore:3.2.10'
-      implementation 'com.dynamsoft:dynamsoftlicense:3.2.10'
+      implementation 'com.dynamsoft:dynamsoftcodeparser:2.0.20'
+      implementation 'com.dynamsoft:dynamsoftcodeparserdedicator:1.0.10'
+      implementation 'com.dynamsoft:dynamsoftcore:3.0.20'
+      implementation 'com.dynamsoft:dynamsoftlicense:3.0.30'
    }
    ```
 
