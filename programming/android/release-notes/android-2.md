@@ -8,6 +8,10 @@ needGenerateH3Content: false
 
 # Release Notes for Android Edition - 2.x
 
+## 2.2.11 (05/15/2024)
+
+- Moved the GJSON dependency from the `DynamsoftCodeParser` library to `DynamsoftCore` library.
+
 ## 2.2.10 (04/16/2024)
 
 ### Improved
