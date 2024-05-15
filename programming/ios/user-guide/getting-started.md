@@ -13,8 +13,6 @@ noTitleIndex: true
 - [Dynamsoft Code Parser - iOS User Guide](#dynamsoft-code-parser---ios-user-guide)
   - [Requirements](#requirements)
   - [Add the xcframeworks](#add-the-xcframeworks)
-    - [Add the xcframeworks Manually](#add-the-xcframeworks-manually)
-    - [Add the xcframeworks via CocoaPods](#add-the-xcframeworks-via-cocoapods)
   - [Build Your First Application](#build-your-first-application)
     - [Create a New Project](#create-a-new-project)
     - [Include the Library](#include-the-library)
@@ -40,23 +38,6 @@ The Dynamsoft Code Parser (DCP) iOS SDK comes with four libraries:
 | `DynamsoftLicense.xcframework` | The license library, which includes license related APIs. |
 | `DynamsoftCodeParserDedicator.xcframework` | The code parser helper library, which includes some validation functions used by the SDK. |
 
-There are two ways to add the libraries into your project - **Manually** and **Via the CocaPods**.
-
-### Add the xcframeworks Manually
-
-1. Download the SDK package from the <a href="https://www.dynamsoft.com/survey/dlr/?utm_source=docs" target="_blank">Dynamsoft website</a>. After unzipping, four **xcframework** files can be found in the **Dynamsoft\Frameworks** directory:
-
-   - **DynamsoftCodeParser.xcframework**
-   - **DynamsoftCore.xcframework**
-   - **DynamsoftLicense.xcframework**
-   - **DynamsoftCodeParserDedicator.xcframework**
-
-2. Drag and drop the above **xcframeworks** into your Xcode project. Make sure to check Copy items if needed and create groups to copy the **xcframeworks** into your project's folder.
-
-3. Click on the project settings then go to **General –> Frameworks, Libraries, and Embedded Content**. Set the **Embed** field to **Embed & Sign** for all the **xcframeworks**.
-
-### Add the xcframeworks via CocoaPods
-
 1. Add the frameworks in your **Podfile**, replace `TargetName` with your real target name.
 
    ```pod
@@ -65,8 +46,8 @@ There are two ways to add the libraries into your project - **Manually** and **V
 
      pod 'DynamsoftCodeParser','2.2.10'
      pod 'DynamsoftCodeParserDedicator','1.2.20'
-     pod 'DynamsoftCore','3.2.11'
-     pod 'DynamsoftLicense','3.2.11'
+     pod 'DynamsoftCore','3.2.30'
+     pod 'DynamsoftLicense','3.2.20'
 
    end
    ```
@@ -84,7 +65,6 @@ The following sample will demonstrate how to create a simple `HelloWorld` app fo
 >Note:
 >
 >- The following steps are completed in XCode 14.2
->- View the entire Swift source code from [HelloWorld(Swift) sample](https://github.com/Dynamsoft/code-parser-mobile-samples/blob/master/ios/HelloWorld/)
 
 ### Create a New Project
 
@@ -219,8 +199,3 @@ Add the SDK to your new project. Please read [Add the xcframeworks](#add-the-xcf
 
 1. Select the device that you want to run your app on.
 2. Run the project, then your app will be installed on your device.
-
->Note:
->
->- You can get the source code of the HelloWord app from the following link
->- View the entire Swift source code from [HelloWorld sample](https://github.com/Dynamsoft/code-parser-mobile-samples/blob/main/ios/HelloWorld/)

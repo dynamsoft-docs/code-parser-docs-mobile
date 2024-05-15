@@ -13,8 +13,6 @@ noTitleIndex: true
 - [Dynamsoft Code Parser - Android User Guide](#dynamsoft-code-parser---android-user-guide)
   - [Requirements](#requirements)
   - [Add the Libraries](#add-the-libraries)
-    - [Add the Libraries Manually](#add-the-libraries-manually)
-    - [Add the Libraries via Maven](#add-the-libraries-via-maven)
   - [Build Your First Application](#build-your-first-application)
     - [Create a New Project](#create-a-new-project)
     - [Include the Library](#include-the-library)
@@ -40,31 +38,6 @@ The Dynamsoft Code Parser (DCP) Android SDK comes with four libraries:
    | `DynamsoftLicense.aar` | The license library, which includes license related APIs. |
    | `DynamsoftCodeParserDedicator.aar`| The code parser helper library, which includes some validation functions used by the SDK.|
 
-There are two ways to add the libraries into your project - **Manually** and **Maven**.
-
-### Add the Libraries Manually
-
-1. Download the SDK package from the <a href="https://www.dynamsoft.com/survey/dlr/?utm_source=docs" target="_blank">Dynamsoft Website</a>. After unzipping, four **aar** files can be found in the **Dynamsoft\Libs** directory:
-
-   - **DynamsoftCodeParser.aar**
-   - **DynamsoftCore.aar**
-   - **DynamsoftLicense.aar**
-   - **DynamsoftCodeParserDedicator.aar**
-
-2. Copy the above seven **aar** files to the target directory such as `[App Project Root Path]\app\libs`
-
-3. Open the file `[App Project Root Path]\app\build.gradle` and add the reference in the dependencies:
-
-   ```groovy
-   dependencies {
-         implementation fileTree(dir: 'libs', include: ['*.aar'])
-   }
-   ```
-
-4. Click **Sync Now**. After the synchronization is complete, the SDK is added to the project.
-
-### Add the Libraries via Maven
-
 1. Open the file `[App Project Root Path]\app\build.gradle` and add the Maven repository:
 
    ```groovy
@@ -81,8 +54,8 @@ There are two ways to add the libraries into your project - **Manually** and **M
    dependencies {
       implementation 'com.dynamsoft:dynamsoftcodeparser:2.2.10'
       implementation 'com.dynamsoft:dynamsoftcodeparserdedicator:1.2.20'
-      implementation 'com.dynamsoft:dynamsoftcore:3.2.10'
-      implementation 'com.dynamsoft:dynamsoftlicense:3.2.10'
+      implementation 'com.dynamsoft:dynamsoftcore:3.2.30'
+      implementation 'com.dynamsoft:dynamsoftlicense:3.2.20'
    }
    ```
 
@@ -95,8 +68,6 @@ In this section, we are going to explain how to create a simple `HelloWorld` app
 >Note:
 >
 >- Android Studio 2022.3.1 is used here in this guide.
->- You can get similar source code from
->    - <a href="https://github.com/Dynamsoft/code-parser-mobile-samples/tree/master/android/HelloWorld" target="_blank">HelloWorld Sample (Java)</a>
 
 ### Create a New Project
 
@@ -237,6 +208,3 @@ Add the SDK to your new project. Please read [Add the Libraries](#add-the-librar
 
 2. Click the **Run app** button, then Android Studio installs your app on the connected device and launches it.
 
-You can also download the full source code of all the steps above:
-
-- <a href="https://github.com/Dynamsoft/code-parser-mobile-samples/tree/main/android/HelloWorld" target="_blank">HelloWorld Sample (Java)</a>
