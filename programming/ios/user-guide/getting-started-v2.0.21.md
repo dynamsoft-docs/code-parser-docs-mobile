@@ -125,7 +125,7 @@ Add the SDK to your new project. Please read [Add the xcframeworks](#add-the-xcf
     >  
     >- Network connection is required for the license to work.
     >- The license string here will grant you a time-limited trial license.
-    >- If the license has expired, you can go to the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=docs&product=dcp&package=mobile" target="_blank">customer portal</a> to request for an extension.
+    >- You can request a 30-day trial license via the [Request a Trial License](https://www.dynamsoft.com/customer/license/trialLicense?product=dcp&utm_source=guide&package=ios){:target="_blank"} link. Offline trial license is also available by [contacting us](https://www.dynamsoft.com/contact/){:target="_blank"}.
 
 ### Initialize Code Parser And Parse the Code Bytes
 
