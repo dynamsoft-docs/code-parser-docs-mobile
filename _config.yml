@@ -15,8 +15,13 @@ dcp_ios: /code-parser/docs/mobile/programming/ios/
 dcp_ios_api: /code-parser/docs/mobile/programming/ios/api-reference/
 dcp_ios_release_notes: /code-parser/docs/mobile/programming/ios/release-notes/
 
+dcp_maui: /code-parser/docs/mobile/programming/maui/
+dcp_maui_api: /code-parser/docs/mobile/programming/maui/api-reference/
+dcp_maui_release_notes: /code-parser/docs/mobile/programming/maui/release-notes/
+
 dcv_android_api: /capture-vision/docs/mobile/programming/android/api-reference/
 dcv_ios_api: /capture-vision/docs/mobile/programming/ios/api-reference/
+dcv_maui_api: /capture-vision/docs/mobile/programming/maui/api-reference/
 dcv_enumerations: /capture-vision/docs/core/enums/
 dcv_parameter_reference: /capture-vision/docs/core/parameters/reference/
 dcv_parameter: /capture-vision/docs/core/parameters/
@@ -64,6 +69,11 @@ defaults:
     values:
       docRootName: "Code Parser iOS Edition"
       docHomePage: "/code-parser/docs/mobile/programming/ios/"
+  - scope:
+      path: "programming/maui"
+    values:
+      docRootName: "Code Parser MAUI Edition"
+      docHomePage: "/code-parser/docs/mobile/programming/maui/"
   - scope:
       path: "Hide_Tree_Page.html"
     values:
