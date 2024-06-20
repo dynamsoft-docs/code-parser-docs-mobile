@@ -8,7 +8,7 @@ needAutoGenerateSidebar: true
 
 # ParsedResultItem Class
 
-`ParsedResultItem` it the basic unit of a parsed result. It stores the field name, value and additional information.
+`ParsedResultItem` is the basic unit of a parsed result. It stores the field name, value and additional information.
 
 ## Definition
 
