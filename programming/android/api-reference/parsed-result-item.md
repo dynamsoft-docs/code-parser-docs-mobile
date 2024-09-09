@@ -76,6 +76,8 @@ String getFieldValue(String fieldName);
 
 `[in] fieldName`: The name of the field.
 
+> [View more information about the field names of all supported code types]({{ site.code_types }}){:target="_blank"}.
+
 **Return Value**
 
 Returns a string representing the specified field value.
@@ -131,3 +133,5 @@ HashMap<String, String> getParsedFields();
 **Return Value**
 
 A HashMap that contains the names and values of the parsed fields.
+
+> [View more information about the field names of all supported code types]({{ site.code_types }}){:target="_blank"}.
