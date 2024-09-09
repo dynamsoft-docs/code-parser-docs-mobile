@@ -117,7 +117,7 @@ func getFieldValue(_ fieldName:String) -> String
 
 `fieldName`: The name of the field.
 
-> [View more information about the field names of all supported code types]({{ site.code_types }}).
+> [View more information about the field names of all supported code types]({{ site.code_types }}){:target="_blank"}.
 
 **Return Value**
 
@@ -188,4 +188,4 @@ A `NSDictionary` object stores the field names and values of the parsed fields. 
 var parsedFields: NSDictionary { get }
 ```
 
-> [View more information about the field names of all supported code types]({{ site.code_types }}).
+> [View more information about the field names of all supported code types]({{ site.code_types }}){:target="_blank"}.
