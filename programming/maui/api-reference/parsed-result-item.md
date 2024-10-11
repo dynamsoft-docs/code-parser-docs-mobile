@@ -66,4 +66,4 @@ The parsed result with name & value in a `Dictionary`.
 Dictionary<string, ParsedField> ParsedFields { get; }
 ```
 
-> [View more information about the field names of all supported code types]({{ site.code_types }}){:target="_blank"}.
+> [View more information about the field names of all supported code types]({{ site.code_types }}).
