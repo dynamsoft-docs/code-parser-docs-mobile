@@ -36,7 +36,8 @@ dbr_icon: /code-parser/docs/mobile/assets/img-icon/icon-dbr.svg
 dwt_icon: /code-parser/docs/mobile/assets/img-icon/icon-dwt.svg
 dnt_icon: /code-parser/docs/mobile/assets/img-icon/icon-dnt.svg
 
-useVersionTree: true
+useVersionTree: false
+isDCV: true
 
 baseurl: "/code-parser/docs/mobile"
 
