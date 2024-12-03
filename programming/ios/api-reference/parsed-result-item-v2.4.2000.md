@@ -34,7 +34,6 @@ class ParsedResultItem : CapturedResultItem
 | ------ | ----------- |
 | [`getFieldMappingStatus`](#getfieldmappingstatus) | Gets the mapping status of a specified field from the parsed result. |
 | [`getFieldValidationStatus`](#getfieldvalidationstatus) | Gets the validation status of a specified field from the parsed result. |
-| [`getFieldRawValue`](#getfieldrawvalue) | Gets the raw value of the specified field. |
 | [`getFieldValue`](#getfieldvalue) | Gets the value of a specified field from the parsed result. |
 
 ## Property Summary
@@ -97,31 +96,6 @@ func getFieldValidationStatus(_ fieldName:String) -> ValidationStatus
 
 Returns a [ValidationStatus]({{ site.dcv_enumerations }}code-parser/validation-status.html?lang=objc,swift) enumeration value saying whether the validation of a specified field was successful, failed, or if it did not require validation..
 
-### getFieldRawValue
-
-Gets the raw value of the specified field.
-
-<div class="sample-code-prefix"></div>
->- Objective-C
->- Swift
->
->1. 
-```objc
-- (NSString *)getFieldRawValue(NSString *)fieldName;
-```
-2. 
-```swift
-func getFieldRawValue(_ fieldName:String) -> String
-```
-
-**Parameters**
-
-`fieldName`: The name of the field.
-
-**Return Value**
-
-Returns a string representing the specified field raw value.
-
 ### getFieldValue
 
 Gets the value of a specified field from the parsed result.
@@ -142,8 +116,6 @@ func getFieldValue(_ fieldName:String) -> String
 **Parameters**
 
 `fieldName`: The name of the field.
-
-> [View more information about the field names of all supported code types]({{ site.code_types }}).
 
 **Return Value**
 
@@ -213,5 +185,3 @@ A `NSDictionary` object stores the field names and values of the parsed fields. 
 ```swift
 var parsedFields: NSDictionary { get }
 ```
-
-> [View more information about the field names of all supported code types]({{ site.code_types }}).
