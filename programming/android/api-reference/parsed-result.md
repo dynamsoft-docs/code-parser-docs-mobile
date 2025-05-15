@@ -23,39 +23,17 @@ class ParsedResult
 
 | Method               | Description |
 |----------------------|-------------|
-| [`getOriginalImageHashId`](#getoriginalimagehashid) | Gets the hash ID of the source image. |
-| [`getOriginalImageTag`](#getoriginalimagetag) | Gets the tag of the source image. |
 | [`getItems`](#getitems) | Gets the parsed result item at the specified index. |
-| [`getErrorCode`](#geterrorcode) | Gets the error code of the parsed result, if an error occurred. |
-| [`getErrorString`](#geterrormessage) | Gets the error message of the parsed result, if an error occurred. |
 
-### getOriginalImageHashId
+The following methods are inherited from [`CapturedResultBase`]({{ site.dcv_android_api }}core/basic-structures/captured-result-base.html):
 
-Gets the hash ID of the source image.
-
-```java
-String getOriginalImageHashId();
-```
-
-**Return value**
-
-Returns a pointer to a null-terminated string containing the hash ID of the source image.
-
-### getOriginalImageTag
-
-Gets the tag of the source image.
-
-```java
-ImageTag getOriginalImageTag();
-```
-
-**Return value**
-
-Returns a pointer to a CImageTag object representing the tag of the source image.
-
-**See Also**
-
-[ImageTag]({{ site.dcv_android_api }}core/basic-structures/image-tag.html)
+| Method | Description |
+| ------ | ----------- |
+| [`getOriginalImageHashId`]({{ site.dcv_android_api }}core/basic-structures/captured-result-base.html#getoriginalimagehashid) | Gets the hash id of the original image. |
+| [`getOriginalImageTag`]({{ site.dcv_android_api }}core/basic-structures/captured-result-base.html#getoriginalimagetag) | Gets the [ImageTag](image-tag.md) of the original image. |
+| [`getRotationTransformMatrix`]({{ site.dcv_android_api }}core/basic-structures/captured-result-base.html#getrotationtransformmatrix) | Gets the rotation transformation matrix of the original image relative to the rotated image. |
+| [`getErrorCode`]({{ site.dcv_android_api }}core/basic-structures/captured-result-base.html#geterrorcode) | Gets the error code of this result. |
+| [`getErrorMessage`]({{ site.dcv_android_api }}core/basic-structures/captured-result-base.html#geterrormessage) | Gets the error message of this result. |
 
 ### getItems
 
@@ -72,27 +50,3 @@ Returns an array of `ParsedResultItem`.
 **See Also**
 
 [ParsedResultItem]({{ site.dcp_android_api }}parsed-result-item.html)
-
-### getErrorCode
-
-Gets the error code of the parsed result, if an error occurred.
-
-```java
-int getErrorCode();
-```
-
-**Return value**
-
-Returns the error code of the parsed result, or 0 if no error occurred.
-
-### getErrorMessage
-
-Gets the error message of the parsed result, if an error occurred.
-
-```java
-String getErrorMessage();
-```
-
-**Return value**
-
-Returns a pointer to a null-terminated string containing the error message of the parsed result, or a pointer to an empty string if no error occurred.
