@@ -12,7 +12,7 @@ needAutoGenerateSidebar: true
 
 ## Definition
 
-*Assembly:* DynamsoftCodeParser.xcframework
+*Assembly:* DynamsoftCaptureVisionBundle.xcframework
 
 <div class="sample-code-prefix"></div>
 >- Objective-C

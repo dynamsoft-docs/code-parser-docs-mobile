@@ -14,7 +14,7 @@ needAutoGenerateSidebar: true
 
 *Namespace:* com.dynamsoft.dcp
 
-*Assembly:* DynamsoftCodeParser.aar
+*Assembly:* DynamsoftCaptureVisionBundle.aar
 
 ```java
 class CodeParserModule
