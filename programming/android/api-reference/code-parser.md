@@ -14,7 +14,7 @@ The `CodeParser` class enable users to configure the code parser settings or par
 
 *Namespace:* com.dynamsoft.dcp
 
-*Assembly:* DynamsoftCodeParser.aar
+*Assembly:* DynamsoftCaptureVisionBundle.aar
 
 ```java
 class CodeParser

@@ -13,7 +13,7 @@ needAutoGenerateSidebar: true
 
 ## Definition
 
-*Assembly:* DynamsoftCodeParser.xcframework
+*Assembly:* DynamsoftCaptureVisionBundle.xcframework
 
 <div class="sample-code-prefix"></div>
 >- Objective-C
@@ -32,59 +32,19 @@ class ParsedResult : NSObject
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| [`originalImageHashId`](#originalimagehashid) | *NSString \** | Gets the hash ID of the source image. |
-| [`originalImageTag`](#originalimagetag) | *DSImageTag \** | Gets the tag of the source image. |
 | [`items`](#items) | *NSArray<DSParsedResultItem*> \** | Gets the parsed result item at the specified index. |
-| [`errorCode`](#errorcode) | *NSInteger* | Gets the error code of the parsed result, if an error occurred. |
-| [`errorString`](#errormessage) | *NSString \** | Gets the error message of the parsed result, if an error occurred. |
+
+The following attributes are inherited from [`DSCapturedResultBase`]({{ site.dcv_ios_api }}core/basic-structures/captured-result-base.html):
+
+| Attributes | Type | Description |
+| ---------- | ---- | ----------- |
+| [`originalImageHashId`]({{ site.dcv_ios_api }}core/basic-structures/captured-result-base.html#originalimagehashid) | *NSString \** | The hash id of the original image. |
+| [`originalImageTag`]({{ site.dcv_ios_api }}core/basic-structures/captured-result-base.html#originalimagetag) | *DSImageTag \** | The [DSImageTag](image-tag.md) of the original image. |
+| [`rotationTransformMatrix`]({{ site.dcv_ios_api }}core/basic-structures/captured-result-base.html#rotationtransformmatrix) | *CGAffineTransform* | The rotation transformation matrix of the original image relative to the rotated image. |
+| [`errorCode`]({{ site.dcv_ios_api }}core/basic-structures/captured-result-base.html#errorcode) | *NSInteger* | Get the error code of this result. |
+| [`errorMessage`]({{ site.dcv_ios_api }}core/basic-structures/captured-result-base.html#errormessage) | *NSString \** | Get the error message of this result. |
 
 ## Method Detail
-
-### originalImageHashId
-
-Gets the hash ID of the source image.
-
-<div class="sample-code-prefix"></div>
->- Objective-C
->- Swift
->
->1. 
-```objc
-@property (nonatomic, nullable, readonly) NSString* originalImageHashId;
-```
-2. 
-```swift
-var originalImageHashId: String? { get }
-```
-
-**Return value**
-
-Returns a pointer to a null-terminated string containing the hash ID of the source image.
-
-### originalImageTag
-
-Gets the tag of the source image.
-
-<div class="sample-code-prefix"></div>
->- Objective-C
->- Swift
->
->1. 
-```objc
-@property (nonatomic, nullable, readonly) DSImageTag* originalImageTag;
-```
-2. 
-```swift
-var originalImageTag: ImageTag? { get }
-```
-
-**Return value**
-
-Returns a pointer to a CImageTag object representing the tag of the source image.
-
-**See Also**
-
-[ImageTag]({{ site.dcv_ios_api }}core/basic-structures/image-tag.html)
 
 ### items
 
@@ -106,45 +66,3 @@ var items: [ParsedResultItem]? { get }
 **Return value**
 
 Returns an array of [`ParsedResultItem`](parsed-result-item.html).
-
-### errorCode
-
-Gets the error code of the parsed result, if an error occurred.
-
-<div class="sample-code-prefix"></div>
->- Objective-C
->- Swift
->
->1. 
-```objc
-@property (nonatomic, assign, readonly) NSInteger errorCode;
-```
-2. 
-```swift
-var errorCode: Int { get }
-```
-
-**Return value**
-
-Returns the error code of the parsed result, or 0 if no error occurred.
-
-### errorMessage
-
-Gets the error message of the parsed result, if an error occurred.
-
-<div class="sample-code-prefix"></div>
->- Objective-C
->- Swift
->
->1. 
-```objc
-@property (nonatomic, assign, readonly) NSString * errorMessage;
-```
-2. 
-```swift
-var errorMessage: String? { get }
-```
-
-**Return value**
-
-The error message in a string.

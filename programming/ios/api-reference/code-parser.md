@@ -12,7 +12,7 @@ The `DSCodeParser` class enable users to configure the code parser settings or p
 
 ## Definition
 
-*Assembly:* DynamsoftCodeParser.xcframework
+*Assembly:* DynamsoftCaptureVisionBundle.xcframework
 
 <div class="sample-code-prefix"></div>
 >- Objective-C
