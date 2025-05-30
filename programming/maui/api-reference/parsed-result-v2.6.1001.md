@@ -18,21 +18,23 @@ needAutoGenerateSidebar: true
 *Assembly:* Dynamsoft.CodeParser.Maui
 
 ```csharp
-class ParsedResult : CapturedResultBase
+class ParsedResult
 ```
 
 | Property | Type | Description |
 |----------|------|-------------|
+| [`OriginalImageHashId`](#originalimagehashid) | *string* | The hash ID of the source image. |
 | [`Items`](#items) | *List<ParsedResultItem>* | The parsed result item at the specified index. |
+| [`ErrorCode`](#errorcode) | *int* | The error code of the parsed result, if an error occurred. |
+| [`ErrorString`](#errormessage) | *string* | The error message of the parsed result, if an error occurred. |
 
-The following properties are inherited from [`CapturedResultBase`]({{ site.dcv_maui_api }}core/captured-result-base.html):
+### OriginalImageHashId
 
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| [`OriginalImageHashId`]({{ site.dcv_maui_api }}core/captured-result-base.html#originalimagehashid) | *string* | Represents the hash id of the original image. |
-| [`RotationTransformMatrix`]({{ site.dcv_maui_api }}core/captured-result-base.html#rotationtransformmatrix) | *Matrix* | Represents the rotation transformation matrix of the original image relative to the rotated image. |
-| [`ErrorCode`]({{ site.dcv_maui_api }}core/captured-result-base.html#errorcode) | *int* | Represents the error code of this result. |
-| [`ErrorMessage`]({{ site.dcv_maui_api }}core/captured-result-base.html#errormessage) | *string* | Represents the error message of this result. |
+The hash ID of the source image.
+
+```csharp
+string OriginalImageHashId { get; }
+```
 
 ### Items
 
@@ -45,3 +47,19 @@ List<ParsedResultItem> Items { get; }
 **See Also**
 
 [ParsedResultItem]({{ site.dcp_maui_api }}parsed-result-item.html)
+
+### ErrorCode
+
+The error code of the parsed result, if an error occurred.
+
+```csharp
+int ErrorCode { get; }
+```
+
+### ErrorMessage
+
+The error message of the parsed result, if an error occurred.
+
+```csharp
+string ErrorMessage { get; }
+```
