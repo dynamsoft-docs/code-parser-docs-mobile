@@ -23,7 +23,7 @@ class ParsedResult : CapturedResultBase
 
 | Property | Type | Description |
 |----------|------|-------------|
-| [`Items`](#items) | *List<ParsedResultItem>* | The parsed result item at the specified index. |
+| [`Items`](#items) | *ParsedResultItem[]* | The parsed result item at the specified index. |
 
 The following properties are inherited from [`CapturedResultBase`]({{ site.dcv_maui_api }}core/captured-result-base.html):
 
@@ -39,7 +39,7 @@ The following properties are inherited from [`CapturedResultBase`]({{ site.dcv_m
 The parsed result item at the specified index.
 
 ```csharp
-List<ParsedResultItem> Items { get; }
+ParsedResultItem[]? Items { get; }
 ```
 
 **See Also**
