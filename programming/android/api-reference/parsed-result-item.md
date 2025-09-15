@@ -14,7 +14,7 @@ needAutoGenerateSidebar: true
 
 *Namespace:* com.dynamsoft.dcp
 
-*Assembly:* DynamsoftCaptureVisionBundle.aar
+*Assembly:* DynamsoftCodeParser.aar
 
 ```java
 class ParsedResultItem extends CapturedResultItem
@@ -25,7 +25,6 @@ class ParsedResultItem extends CapturedResultItem
   | [`getCodeType`](#getcodetype) | Gets the code type of the parsed result. |
   | [`getFieldMappingStatus`](#getfieldmappingstatus) | Gets the mapping status of a specified field from the parsed result. |
   | [`getFieldValidationStatus`](#getfieldvalidationstatus) | Gets the validation status of a specified field from the parsed result. |
-  | [`getFieldRawValue`](#getfieldrawvalue) | Gets the raw value of the specified field. |
   | [`getFieldValue`](#getfieldvalue) | Gets the value of a specified field from the parsed result. |
   | [`getJsonString`](#getjsonstring) | Gets the parsed result as a JSON formatted string. |
   
@@ -65,22 +64,6 @@ String getJsonString();
 
 Returns a JSON formatted string representing the parsed result.
 
-## getFieldRawValue
-
-Gets the raw value of the specified field.
-
-```java
-String getFieldRawValue(String fieldName);
-```
-
-**Parameters**
-
-`[in] fieldName`: The name of the field.
-
-**Return Value**
-
-Returns a string representing the specified field raw value.
-
 ## getFieldValue
 
 Gets the value of a specified field from the parsed result.
@@ -92,8 +75,6 @@ String getFieldValue(String fieldName);
 **Parameters**
 
 `[in] fieldName`: The name of the field.
-
-> [View more information about the field names of all supported code types]({{ site.code_types }}).
 
 **Return Value**
 
@@ -150,5 +131,3 @@ HashMap<String, String> getParsedFields();
 **Return Value**
 
 A HashMap that contains the names and values of the parsed fields.
-
-> [View more information about the field names of all supported code types]({{ site.code_types }}).

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: EnumMappingStatus - DCP MAUI Edition API Reference
-description: Enumeration EnumMappingStatus of 
+description: Enumeration EnumMappingStatus of DCP MAUI edition represents the outcome of a mapping operation on a field.
 keywords: Mapping status
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
