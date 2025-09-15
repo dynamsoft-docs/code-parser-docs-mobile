@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: EnumValidationStatus - DCP MAUI Edition API Reference
-description: Enumeration EnumValidationStatus of 
+description: Enumeration EnumValidationStatus of DCP MAUI edition describes the outcome of a validation process on a field.
 keywords: validation status
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
