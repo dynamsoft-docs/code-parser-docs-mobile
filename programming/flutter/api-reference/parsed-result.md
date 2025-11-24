@@ -26,14 +26,14 @@ class ParsedResult
 | -------- | ---- | ----------- |
 | [`items`](#items) | *List\<ParsedResultItem\>?* | A list of [`ParsedResultItem`](parsed-result-item.md), the basic unit representing a single parsed result from an encrypted text. |
 
-The following properties are inherited from [`CapturedResult`]({{ site.dcv_flutter_api }}capture-vision-router/captured-result.html):
+The following properties are inherited from [`CapturedResultBase`]({{ site.dcv_flutter_api }}core/captured-result-base.html):
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| [`originalImageHashId`]({{ site.dcv_flutter_api }}capture-vision-router/captured-result.html#originalimagehashid) | *String* | The hash id of the original image. You can use this ID to get the original image via the `IntermediateResultManager` class. |
-| [`rotationTransformMatrix`]({{ site.dcv_flutter_api }}capture-vision-router/captured-result.html#rotationtransformmatrix) |  *Matrix4* | The rotation transformation matrix of the original image relative to the rotated image. |
-| [`errorCode`]({{ site.dcv_flutter_api }}capture-vision-router/captured-result.html#errorcode) | *int* | The error code associated with the capture result. |
-| [`errorMessage`]({{ site.dcv_flutter_api }}capture-vision-router/captured-result.html#errormessage) | *String* | The error message associated with the capture result. |
+| [`originalImageHashId`]({{ site.dcv_flutter_api }}core/captured-result-base.html#originalimagehashid) | *String* | The hash id of the original image. You can use this ID to get the original image via the `IntermediateResultManager` class. |
+| [`rotationTransformMatrix`]({{ site.dcv_flutter_api }}core/captured-result-base.html#rotationtransformmatrix) |  *Matrix4* | The rotation transformation matrix of the original image relative to the rotated image. |
+| [`errorCode`]({{ site.dcv_flutter_api }}core/captured-result-base.html#errorcode) | *int* | The error code associated with the capture result. |
+| [`errorMessage`]({{ site.dcv_flutter_api }}core/captured-result-base.html#errormessage) | *String* | The error message associated with the capture result. |
 
 ### items
 
