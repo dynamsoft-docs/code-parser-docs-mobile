@@ -26,8 +26,8 @@ class ParsedField
 | -------- | ---- | ----------- |
 | [`value`](#value) | *String* | The processed value of the parsed field. |
 | [`rawValue`](#value) | *String* | The raw string value of the field as obtained from the source data. |
-| [`mappingStatus`](#mappingstatus) | [*EnumMappingStatus*](./enum/mapping-status.md) | A status representing whether the field was mapped from the source data or not. |
-| [`validationStatus`](#validationstatus) | [*EnumValidationStatus*](./enum/validation-status.md) | The status of a field's value after the internal validation checks. |
+| [`mappingStatus`](#mappingstatus) | [*EnumMappingStatus*]({{ site.dcv_flutter_api }}core/enum/mapping-status.html) | A status representing whether the field was mapped from the source data or not. |
+| [`validationStatus`](#validationstatus) | [*EnumValidationStatus*]({{ site.dcv_flutter_api }}core/enum/validation-status.html) | The status of a field's value after the internal validation checks. |
 
 ### value
 
