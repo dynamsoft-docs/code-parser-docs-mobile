@@ -26,8 +26,8 @@ class ParsedField
 | -------- | ---- | ----------- |
 | [`value`](#value) | *String* | The processed value of the parsed field. |
 | [`rawValue`](#value) | *String* | The raw string value of the field as obtained from the source data. |
-| [`mappingStatus`](#mappingstatus) | [*EnumMappingStatus*](./enum/mapping-status.md) | A status representing whether the field was mapped from the source data or not. |
-| [`validationStatus`](#validationstatus) | [*EnumValidationStatus*](./enum/validation-status.md) | The status of a field's value after the internal validation checks. |
+| [`mappingStatus`](#mappingstatus) | [*EnumMappingStatus*]({{ site.dcv_flutter_api }}core/enum/mapping-status.html) | A status representing whether the field was mapped from the source data or not. |
+| [`validationStatus`](#validationstatus) | [*EnumValidationStatus*]({{ site.dcv_flutter_api }}core/enum/validation-status.html) | The status of a field's value after the internal validation checks. |
 
 ### value
 
@@ -37,10 +37,6 @@ The processed value of the parsed field.
 String value;
 ```
 
-**Remarks**
-
-The processed value usually comes in handy when dealing with country codes. For example, if the passport is from Canada, the processed string value would be "Canada" while the raw string value is "CAN".
-
 ### rawValue
 
 The raw string value of the field as obtained from the source data.
@@ -48,10 +44,6 @@ The raw string value of the field as obtained from the source data.
 ```dart
 String rawValue;
 ```
-
-**Remarks**
-
-The processed value usually comes in handy when dealing with country codes. For example, if the passport is from Canada, the processed string value would be "Canada" while the raw string value is "CAN".
 
 ### mappingStatus
 
@@ -66,9 +58,5 @@ EnumMappingStatus mappingStatus;
 The status of a field's value after the internal validation checks, represented as a [`EnumValidationStatus`](./enum/validation-status.md). Once a field is parsed by the Code Parser, it is run through validation checks to make sure that the information is accurate and correct. If a field's value does not pass, the validationStatus would be `EnumValidationStatus.failed`.
 
 ```dart
-String codeType;
+EnumValidationStatus validationStatus;
 ```
-
-**Remarks**
-
-An example of a failed validation check is if the month of a birth date is April 31 for instance. Since that is anb invalid day, the date of birth field will be marked as invalid. The validation check does not compare the info of a parsed field against a database or anything of the kind in order to verify if the information is correct.

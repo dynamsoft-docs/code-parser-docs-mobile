@@ -17,7 +17,7 @@ The `ParsedResultItem` class represents the most basic unit of a parsed result. 
 *Assembly:* dynamsoft_capture_vision_flutter
 
 ```dart
-class ParsedResultItem
+class ParsedResultItem extends CapturedResultItem
 ```
 
 ## Properties
@@ -28,9 +28,20 @@ class ParsedResultItem
 | [`jsonString`](#jsonstring) | *String* | The raw JSON string representation of the parsed result. |
 | [`codeType`](#codetype) | *String* | The type of the encrypted code associated to the attached parsed result. |
 
+The following methods are inherited from [`CapturedResultItem`]({{ site.dcv_flutter_api }}core/captured-result-item.html).
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| [`targetROIDefName`]({{ site.dcv_flutter_api }}core/captured-result-item.html#targetroidefname) | *String* | The name of the target region of interest (ROI) where the captured result was found. |
+| [`taskName`]({{ site.dcv_flutter_api }}core/captured-result-item.html#taskname) | *String* | The name of the recognition task that produced the CapturedResultItem. |
+| [`type`]({{ site.dcv_flutter_api }}core/captured-result-item.html#type) | [*EnumCapturedResultItemType*]({{ site.dcv_flutter_api }}core/enum/captured-result-item-type.html) | The type of the captured result item. |
+
 ### parsedFields
 
-A map of the parsed fields extracted from the parsed result. Each field can then be accessed by the associated key, allowing the developer to present the parsed info in a user-friendly manner.
+A map of the parsed fields extracted from the parsed result.
+
+- Key: The field names of the code. [Check the available field names]({{ site.code_types }})
+- Value: [`ParsedField`](parsed-field.md)
 
 ```dart
 Map<String, ParsedField> parsedFields;
