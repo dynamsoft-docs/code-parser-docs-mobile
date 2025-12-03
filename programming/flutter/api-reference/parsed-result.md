@@ -17,7 +17,7 @@ The `ParsedResult` class represents the result of a code parsing process. It pro
 *Assembly:* dynamsoft_capture_vision_flutter
 
 ```dart
-class ParsedResult
+class ParsedResult extends CapturedResultBase
 ```
 
 ## Properties
