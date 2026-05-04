@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ParsedResultItem Class - Dynamsoft Capture Vision Flutter Edition
-description: The ParsedResult class represents the result of a code parsing process. It provides access to the individual parsed items resulting from a document or an encrypted text.
+description: "Learn what ParsedResult does in Dynamsoft Code Parser Flutter API, including its purpose, key data, and how it supports capture workflows for modern web."
 keywords: originalImageHashId, items, errorCode, ParsedResultItem, api reference, barcode result, capture, flutter, code parser
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ParsedResultItem - Dynamsoft Capture Vision React Native Edition
-description: Interface ParsedResult represents the result of a code parsing process. It provides access to the individual parsed items resulting from a document or an encrypted text.
+description: "Understand the ParsedResult interface in Dynamsoft Code Parser React Native API and learn how it supports capture, camera, or result workflows for modern web."
 keywords: originalImageHashId, items, errorCode, ParsedResultItem, api reference, barcode result, capture, React Native, code parser
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
